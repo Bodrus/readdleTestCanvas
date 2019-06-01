@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <canvas id="canvas"></canvas>
+
+  <form>
+    <div id="fileinput">
+      <div class="wraper1">
+        <label for="fileinput1">Choose first file</label>
+        <input type="file" id="fileinput1" class="file" name="one" accept=".jpg, .jpeg, .png">
+      </div>
+      <div class="wraper2">
+        <label for="fileinput2">Choose second file</label>
+        <input type="file" id="fileinput2" class="file" name="two" accept=".jpg, .jpeg, .png">
+      </div>
+    </div>
+    <div>
+      <input type="radio" id="horizontal"
+      name="position" value="horizontal" checked>
+      <label for="horizontal">Horizontal position</label>
+    </div>
+    <div>
+      <input type="radio" id="vertical"
+      name="position" value="vertical">
+      <label for="vertical">Vertikal position</label>
+    </div>
+    <div>
+      <label for="width">Set the width for the vertical display</label>
+      <input type="number" id="imgWidth" name="imgWidth" min="50" max="1000" value="200">
+    </div>
+    <div>
+      <label for="height">Set the height for horizontal display</label>
+      <input type="number" id="imgHeight" name="imgHeight" min="50" max="1000" value="200">
+    </div> 
+    <div>
+      <label for="numberFiles">Choose number of files</label>
+      <select id="numberFiles" >
+        <option value="2" selected >2</option>
+        <option value="3">3</option>
+      </select>
+    </div>
+  </form>
+  <script src="src/index.js"></script>
+</body>
+</html>
