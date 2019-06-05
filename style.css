@@ -1,4 +1,41 @@
 #canvas {
-
   border: 1px solid black;
+}
+
+form {
+  width: 300px;
+  border: 1px solid black;
+  background-color: rgb(200, 209, 209);
+}
+
+.wraper {
+  margin-bottom: 5px;
+}
+.block {
+  margin-bottom: 5px;
+}
+
+.file {
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.label {
+    width: 180px;
+    height: 50px;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    font: 14px/50px Tahoma;
+    transition: all 0.18s ease-in-out;
+    border: 1px solid #333;
+    color: #333;
+    background: white;
+}
+
+.label:hover {
+    color: white;
+    background: rgb(235, 125, 125);
 }
